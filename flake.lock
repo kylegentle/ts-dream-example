@@ -141,6 +141,22 @@
         "type": "indirect"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1647282937,
+        "narHash": "sha256-K8Oo6QyFCfiEWTRpQVfzcwI3YNMKlz6Tu8rr+o3rzRQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "64fc73bd74f04d3e10cb4e70e1c65b92337e76db",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-21.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "node2nix": {
       "flake": false,
       "locked": {
@@ -201,7 +217,8 @@
     },
     "root": {
       "inputs": {
-        "dream2nix": "dream2nix"
+        "dream2nix": "dream2nix",
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
