@@ -10,7 +10,8 @@ In a non-Nix world, there are three ways to run the program:
 
 With dream2nix, I'm not yet sure how to get this running. Here are the results of each approach:
 
-1. ```
+1. 
+```
 [kyle@pc:~/code/ts-dream-example]$ nix develop .#ts-dream-example
 
 [kyle@pc:~/code/ts-dream-example]$ npm run start
@@ -50,7 +51,7 @@ npm ERR! A complete log of this run can be found in:
 npm ERR!     /home/kyle/.npm/_logs/2022-03-16T02_02_26_532Z-debug.log
 ``` 
 
-1. 
+2. 
 ```
 [kyle@pc:~/code/ts-dream-example]$ nix develop .#ts-dream-example
 
@@ -68,4 +69,4 @@ To get access to the TypeScript compiler, tsc, from the command line either:
 
 ```
 
-1. ...Actually, I'm not sure how to attempt this. Ideally, I want to be able to run `nix build .#ts-dream-example`, have it compile my typescript files using `tsc`, and then be able to call `bin/`. But I know right now it has no reason to call `tsc`. Would love some feedback here.
+3. ...Actually, I'm not sure how to attempt this. Ideally, I want to be able to run `nix build .#ts-dream-example`, have it compile my typescript files using `tsc`, and then be able to call `bin/`. But I know right now it has no reason to call `tsc`. Would love some feedback here.
